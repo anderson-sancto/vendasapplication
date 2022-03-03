@@ -1,6 +1,6 @@
 package com.example.vendasapp;
 
-import domain.entity.Cliente;
+import com.example.vendasapp.domain.entity.Cliente;
 import com.example.vendasapp.domain.repositorios.Clientes;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -17,7 +17,7 @@ public class VendasAppApplication {
 	public CommandLineRunner init(@Autowired Clientes clientes){
 		return args -> {
 			System.out.println("Salvando clientes");
-			clientes.salvar(new Cliente("Douglas"));
+			clientes.salvar(new Cliente("Anderson"));
 			clientes.salvar(new Cliente("Outro Cliente"));
 
 			List<Cliente> todosClientes = clientes.obterTodos();

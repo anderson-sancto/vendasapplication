@@ -1,6 +1,6 @@
 package com.example.vendasapp.domain.repositorios;
 
-import domain.entity.Cliente;
+import com.example.vendasapp.domain.entity.Cliente;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
@@ -15,6 +15,7 @@ import java.util.List;
 @Repository
 public class Clientes {
 
+    //private static String INSERT = "insert into cliente (nome) values (?) ";
     private static String SELECT_ALL = "SELECT * FROM CLIENTE ";
     private static String UPDATE = "update cliente set nome = ? where id = ? ";
     private static String DELETE = "delete from cliente where id = ? ";

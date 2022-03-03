@@ -1,4 +1,4 @@
-package domain.entity;
+package com.example.vendasapp.domain.entity;
 
 import javax.persistence.*;
 
